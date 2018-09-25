@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+#logo{
+  height: 50px;
+}
+#banner-one{
+  background-image: url('../images/couple-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#banner-two{
+  height: 100vh;
+  padding-top: 15vh;
+  text-align: center;
+}
+#banner-one p{
+  text-align: center;
+  position: relative;
+  top: 35vh;
+  color: white;
+  font-size: 16px;
+}
+.banner-title-white{
+  font-family: 'Montserrat', cursive;
+  color: white;
+  font-size: 10vh;
+  text-align: center;
+  /* width: 100%; */
+  position: relative;
+  top: 35vh;
+}
+.banner-title-black{
+  font-family: 'Montserrat', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+p{
+  padding: 15px;
+  text-align: justify;
+}
+.vertical-padding{
+  padding-top: 100px;
+}
+.padding{
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 50px;
+}
+#footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.brand-name{
+  font-size: 40px;
+}
+a{
+  font-size:18px;
+  line-height: 2.8em;
+  color: black;
+  padding-right: 10px;
+}
+a:hover{
+  text-decoration: none;
+}
+.btn{
+  background-repeat: none;
+  background-image: none;
+}
+@media only screen
+  and (max-width: 480px){
+
+
+}
