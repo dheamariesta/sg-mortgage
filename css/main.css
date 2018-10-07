@@ -80,10 +80,6 @@ ul{
   color: white;
   font-size: 60px;
   font-weight: 300;
-  /* text-align: center; */
-  /* width: 100%; */
-  /* position: relative; */
-  /* top: 35vh; */
 }
 
 .service-icons{
@@ -94,7 +90,6 @@ ul{
 .profile-picture{
   width: 200px;
   height: 200px;
-
 }
 .banner-title-black{
   font-family: 'Lato', cursive;
@@ -178,41 +173,67 @@ a:hover{
 .input-group.mb-3{
   width:50%;
 }
-@media only screen
+
+
+
+ @media only screen
   and (max-width: 480px){
     body{
-      padding-top: 0px;
+      padding-top: 50px;
     }
-    .header-row{
-      position: relative;
-      width: 100%;
-      border-bottom: 0px solid #ccc;
-      box-shadow: none;
-      background-color: white;
-      z-index: 1;
-      left: 0;
-      top: 0;
+    #nav{
+      display: block;
+    }
+    #logo{
+      height: 30px;
     }
     #banner-one{
       background-image: url('../images/house.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100%;
-      /* z-index: 100; */
       display: inline-flex;
       align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
     }
+
     #side-image{
       background: url("../images/laptop-girl.jpg") 50% 50% no-repeat;
       background-size: cover;
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       margin: 20px auto;
     }
     .row{
       margin-right: 0px;
       margin-left: 0px;
     }
+    .banner-title-white{
+      font-family: 'Lato', cursive;
+      color: white;
+      font-size: 40px;
+      font-weight: 300;
+    }
+    .why-us-card{
+      text-align: center;
+    }
+    .vertical-padding{
+      padding-top: 50px;
+    }
+    #bank-partners{
+      display: block;
+    }
+    .bank-logo{
+      display: block;
+      margin: 20px auto;
+      max-height: 50px;
+    }
+    .profile-picture{
+      margin: 5px auto;
+    }
+
 
 
 }

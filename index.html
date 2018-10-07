@@ -13,36 +13,37 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
+
 
   </head>
   <body>
-    <div class="row header-row">
+
+    <div class="header-row">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-xs-12">
+          <div class="col-7">
             <img src="./images/SGMortgage-logo.png" id="logo"/>
           </div>
-          <div class="col-md-4 col-xs-12" id="nav">
-            <ul >
+
+          <div class="col-5" id="nav">
+            <label for="show-menu" class="show-menu">Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+              <li><a href="#">Home</a></li>
               <li>
-                <a href="#">Home</a>
+                  <a href="loan.html">Loan Calculator</a>
               </li>
               <li>
-                <a href="loan.html">Loan Calculator</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact Us</a>
+                  <a href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
-
-
       </div>
-
     </div>
-    <div class="row banner" id="banner-one">
+    <div id="banner-one">
 
       <div class="container">
         <div class="row">
@@ -70,21 +71,21 @@
           <div class="col-md-6 col-xs-12">
             <h1 class="banner-title-black">Why Us</h1>
             <div class="row">
-              <div class="col-md-6 col-xs-12">
+              <div class="col-md-6 col-xs-12 why-us-card">
                 <h4 class="why-us-header">Simply the best</h4>
                  Best in bank loan & refinancing rates to all Singaporeans and investors for properties
               </div>
-              <div class="col-md-6 col-xs-12">
+              <div class="col-md-6 col-xs-12 why-us-card">
                 <h4 class="why-us-header">No hassle</h4>
                 Simple online application and access to live support 24/7.
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 col-xs-12">
+              <div class="col-md-6 col-xs-12 why-us-card">
                 <h4 class="why-us-header">Negotiative</h4>
                  Excellent relationship with all major banks in Singapore
               </div>
-              <div class="col-md-6 col-xs-12">
+              <div class="col-md-6 col-xs-12 why-us-card">
                 <h4 class="why-us-header">Reliable</h4>
                 More than 15 years experience providing unbiased advices to our returning clients
               </div>
@@ -131,8 +132,6 @@
     </div>
     <div class="row banner">
       <div class="container">
-
-
         <div class="row" id="bank-partners">
           <h1 class="banner-title-black">Partners</h1>
           <img src="./images/dbs-logo.png" class="bank-logo"/>
@@ -147,13 +146,12 @@
       <div class="container">
         <h1 class="banner-title-black">Story of our clients</h1>
         <div class="row success-story">
-          <div class="col-md-1">
-
+          <div class="col-md-1 col-12">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-12">
             <img src="./images/profile1.png" class="profile-picture"/>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-12">
             <p>
               <span class="quote">&ldquo;</span> SGMortgage really help me managing my finance when it comes to my house mortgage. My wife and I are really grateful to have a new house just in time when the baby comes. Thank you SGMortgage! <span class="quote">&rdquo;</span>
             </p>
