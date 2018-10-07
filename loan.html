@@ -32,7 +32,7 @@
             <label for="show-menu" class="show-menu">Menu</label>
             <input type="checkbox" id="show-menu" role="button">
             <ul id="menu">
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li>
                   <a href="loan.html">Loan Calculator</a>
               </li>
@@ -58,7 +58,12 @@
             </div>
             <div class="col-md-10">
               <span class="form-section-title">Are you buying a property...</span><br />
-              <input type="radio" name="alone-or-joined"/> alone &nbsp; <input type="radio" name="alone-or-joined"/> with partner
+              <div class="radio">
+                <label>
+                  <input type="radio" name="alone-or-joined" id="blankRadio1" value="option1"> alone
+                  &nbsp; <input type="radio" name="alone-or-joined"/> with partner
+                </label>
+              </div>
             </div>
           </div>
           <div class="row form-row">
