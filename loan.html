@@ -45,41 +45,65 @@
       </div>
 
     </div>
-    <div class="container loan-container">
-      <div class="row">
-        <div class="col-md-12">
+    <div class="container-fluid" id="loan-background">
+      <div class="container loan-container">
+        <div id="loan-form">
           <h2 class="banner-title">Loan Calculator</h2>
           <p>
             This calculator estimates the maximum loan affordability. You will need key information such as age, income, debt and liquid assets for an accurate assessment.
           </p>
           <div class="row form-row">
             <div class="col-md-2">
-              <h2>Step 1</h2>
+              <h3 class="steps">Step 1</h3>
             </div>
             <div class="col-md-10">
               <span class="form-section-title">Are you buying a property...</span><br />
-              <div class="radio">
-                <label>
-                  <input type="radio" name="alone-or-joined" id="blankRadio1" value="option1"> alone
-                  &nbsp; <input type="radio" name="alone-or-joined"/> with partner
-                </label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <input type="radio" aria-label="Radio button for following text input" name="alone-or-join"> &nbsp; Alone
+                </div>&nbsp;
+                  <div class="input-group-text">
+                  <input type="radio" aria-label="Radio button for following text input" name="alone-or-join"> &nbsp; With Partner
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
           <div class="row form-row">
             <div class="col-md-2">
-              <h2>Step 2</h2>
+              <h3 class="steps">Step 2</h3>
             </div>
             <div class="col-md-10">
               <span class="form-section-title">Personal details</span><br />
-              Age<br />
-              Salary<br />
-              Employment Type
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Age</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Salary ($)</span>
+                </div>
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Employment Type</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+
             </div>
           </div>
           <div class="row form-row">
             <div class="col-md-2">
-              <h2>Step 3</h2>
+              <h3 class="steps">Step 3</h3>
             </div>
             <div class="col-md-10">
               <span class="form-section-title">Type of property</span><br />
@@ -94,18 +118,20 @@
 
             </div>
           </div>
-
           <div class="row form-row">
             <div class="col-md-2">
-              <h2>Step 4</h2>
+              <h3 class="steps">Step 4</h3>
             </div>
             <div class="col-md-10">
               <span class="form-section-title">About property</span><br />
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+                  <span class="input-group-text" id="inputGroup-sizing-default">Price ($)</span>
                 </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
               </div>
 
               <div class="input-group mb-3">
@@ -119,15 +145,32 @@
           </div>
           <div class="row form-row">
             <div class="col-md-2">
-              <h2>Step 5</h2>
+              <h3 class="steps">Step 5</h3>
             </div>
             <div class="col-md-10">
-              <span class="form-section-title">Other Financial Commitments</span>
+              <span class="form-section-title">Other Financial Commitments</span><br />
+              E.g.: personal loan/s, home loan/s, credit card/s, and any credit facilities
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                </div>
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+
             </div>
           </div>
+          <button type="button" class="btn btn-outline-light" id="submit-calculator">Submit</button>
         </div>
+
+
+
+
       </div>
     </div>
+
 
     <div class="row" id="footer">
       <div class="col-md-12">

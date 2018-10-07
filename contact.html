@@ -13,37 +13,73 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
+
 
   </head>
   <body>
     <div class="header-row">
+
+
+
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-7">
             <img src="./images/SGMortgage-logo.png" id="logo"/>
           </div>
-          <div class="col-md-4"id="nav">
-            <ul >
+          <div class="col-5" id="nav">
+            <label for="show-menu" class="show-menu">Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
               <li>
-                <a href="index.html">Home</a>
+                  <a href="loan.html">Loan Calculator</a>
               </li>
               <li>
-                <a href="#">Loan Calculator</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact Us</a>
+                  <a href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
-
-
       </div>
 
     </div>
-    <div class="container loan-container">
-      
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873.0500666893792!2d103.68039129283645!3d1.3426888705978246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fa0bf3763bb%3A0xbf04f477fda8539!2sSchool+of+Electrical+%26+Electronic+Engineering!5e0!3m2!1sen!2ssg!4v1538924843397" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="contact-us">Contact Us</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email</label>
+              <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-outline-primary" id="submit-contact">Please answer my question!</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h3 class="contact-us">FAQ</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Q: What are your loan amount and terms?<br />A: Our term loans range from $5,000 – $500,000 over 3 – 36 month terms. Our lines of credit go up to $100,000. Payments are made over six months. The lines are revolving so as you pay down your balance, your available funds increase.</li>
+            <li class="list-group-item">Q: How does the application process work? <br />A: Give us a call at <span class="highlight">(65)1234 5678</span> or email us your financial needs at <span class="highlight">support@sgmortgage.com</span> and we will give you free consultation</li>
+
+            <li class="list-group-item">Q: Can foreigners also take up loan from you?<br />A: Definitely yes. We welcome all nationalities who wants to invest in Singapore properties (provided you have the necessary permit to stay in Singapore).</li>
+          </ul>
+
+
+        </div>
+      </div>
+
     </div>
 
     <div class="row" id="footer">
@@ -51,7 +87,6 @@
         Design by: Dhea Mariesta Chanjaya <br />
         &copy; Copyright 2018. All rights reserved.
       </div>
-      <!-- Footer -->
 
     </div>
 
