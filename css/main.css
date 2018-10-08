@@ -137,6 +137,19 @@ p{
   text-align: left;
   padding: 5px 0px;
 }
+#footer li a{
+  display: block;
+  float: none;
+  text-align: left;
+  padding: 5px 0px;
+  color: #ccc;
+  font-size: 14px;
+  /* margin: 0; */
+  height: 100%;
+  /* text-align: center; */
+  line-height: 14px;
+  text-decoration: none;
+}
 li.footer-header{
   text-transform: uppercase;
   font-weight: 600;
