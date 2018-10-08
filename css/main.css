@@ -5,7 +5,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-#logo{
+.logo{
   height: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -120,12 +120,29 @@ p{
   padding-right: 50px;
 }
 #footer{
-  background-color: black;
-  color: white;
+  background-color: #333;
+  color: #ccc;
   text-align: center;
   padding: 15px;
+  font-weight: 300;
 }
-
+#footer ul{
+  position: static;
+  margin: 20px 0px;
+  font-size: 14px;
+}
+#footer li{
+  display: block;
+  float: none;
+  text-align: left;
+  padding: 5px 0px;
+}
+li.footer-header{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
 .brand-name{
   font-size: 40px;
 }
@@ -230,7 +247,7 @@ a:hover{
     #nav{
       display: block;
     }
-    #logo{
+    .logo{
       height: 30px;
     }
     #banner-one{

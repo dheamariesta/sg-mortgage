@@ -88,4 +88,9 @@ input[type=checkbox]:checked ~ #menu{
     .show-menu {
         display:block;
     }
+
+    #footer ul{
+      position: static;
+      display: block;
+    }
 }
