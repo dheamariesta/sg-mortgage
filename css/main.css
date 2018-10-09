@@ -5,6 +5,10 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+h1{
+  font-family: 'Lato';
+  font-weight: 300;
+}
 .logo{
   height: 50px;
   margin-top: 10px;
@@ -74,10 +78,8 @@ ul{
 
 }
 .banner-title-white{
-  font-family: 'Lato', cursive;
   color: white;
   font-size: 60px;
-  font-weight: 300;
 }
 
 .service-icons{
@@ -88,6 +90,21 @@ ul{
 .profile-picture{
   width: 200px;
   height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+}
+.about-title-white{
+  color: white;
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+}
+.role{
+  font-weight: 300;
+  font-style: italic;
+  /* font-size: 12px; */
 }
 .banner-title-black{
   font-family: 'Lato', cursive;
@@ -252,6 +269,38 @@ a:hover{
 .highlight{
   color: red;
 }
+
+#about-banner{
+  background-image: url('../images/about.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+#about-banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  height: 570px;
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+  opacity: 0.7;
+}
+.principle-icon{
+  display: block;
+  height: 60px;
+  margin: 20px auto;
+
+}
+.principle-cards{
+  text-align: center;
+  /* margin: auto auto; */
+  padding: 15px;
+}
  @media only screen
   and (max-width: 480px){
     body{
@@ -317,6 +366,12 @@ a:hover{
       padding: 20px;
       color: white;
       /* margin: 15px; */
+    }
+    #about-banner{
+      height: 300px;
+    }
+    #about-banner:after{
+      height: 350px;
     }
 
 

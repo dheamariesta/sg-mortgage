@@ -16,15 +16,19 @@
     <link rel="stylesheet" type="text/css" href="./css/menu.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
 
+    <link rel="stylesheet" type="text/css" href="./css/timeline.css" />
+
 
   </head>
   <body>
+
     <div class="header-row">
       <div class="container">
         <div class="row">
           <div class="col-8">
             <a href="index.html"><img src="./images/SGMortgage-logo.png" class="logo"/></a>
           </div>
+
           <div class="col-4" id="nav">
             <label for="show-menu" class="show-menu">Menu</label>
             <input type="checkbox" id="show-menu" role="button">
@@ -40,45 +44,104 @@
           </div>
         </div>
       </div>
-
     </div>
-    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873.0500666893792!2d103.68039129283645!3d1.3426888705978246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fa0bf3763bb%3A0xbf04f477fda8539!2sSchool+of+Electrical+%26+Electronic+Engineering!5e0!3m2!1sen!2ssg!4v1538924843397" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h3 class="contact-us">Contact Us</h3>
-          <form id="contact-form">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Name</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your full name">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Email</label>
-              <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-            </div>
-
-            <button type="button" class="btn btn-outline-primary" id="submit-contact">Please answer my question!</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <h3 class="contact-us">FAQ</h3>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Q: What are your loan amount and terms?<br />A: Our term loans range from $5,000 – $500,000 over 3 – 36 month terms. Our lines of credit go up to $100,000. Payments are made over six months. The lines are revolving so as you pay down your balance, your available funds increase.</li>
-            <li class="list-group-item">Q: How does the application process work? <br />A: Give us a call at <span class="highlight">(65)1234 5678</span> or email us your financial needs at <span class="highlight">support@sgmortgage.com</span> and we will give you free consultation</li>
-
-            <li class="list-group-item">Q: Can foreigners also take up loan from you?<br />A: Definitely yes. We welcome all nationalities who wants to invest in Singapore properties (provided you have the necessary permit to stay in Singapore).</li>
-          </ul>
-
-
+    <div id="about-banner">
+      <h1 class="about-title-white">We believe you matter</h1>
+    </div>
+    <div class="row banner">
+      <div class="container">
+        <h1 class="banner-title-black">Our Core Principles</h1>
+        <div class="row">
+          <div class="col-md-3 principle-cards">
+            <img src="./images/privacy.png" class="principle-icon"/>
+            Privacy and data security
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/information.png" class="principle-icon"/>
+            Clear and truthful information
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/customer.png" class="principle-icon"/>
+            Respect to our customers
+          </div>
+          <div class="col-md-3 principle-cards"><img src="./images/ux.png" class="principle-icon"/>
+            Deliver the best customer experience
+          </div>
         </div>
       </div>
-
     </div>
-
+    <div class="row banner">
+      <div class="container">
+        <h1 class="banner-title-black">Our History</h1>
+        <div class="row">
+          <div class="timeline">
+            <div class="my-container left">
+              <div class="content">
+                <h3>2003</h3>
+                Realising that getting a property mortgage was difficult, our founder stepped up and start SGMortgage, as the first online mortgage comparison portal in Singapore.
+              </div>
+            </div>
+            <div class="my-container right">
+              <div class="content">
+                <h3>2010</h3>
+                SGMortgage received an investment sum of $1 Billion; awarded as start-up of the year.
+              </div>
+            </div>
+            <div class="my-container left">
+              <div class="content">
+                <h3>2015</h3>
+                SGMortgage was registered for IPO in New York Stock Exchange
+              </div>
+            </div>
+            <div class="my-container right">
+              <div class="content">
+                <h3>Now</h3>
+                We have catered more that 500,000 families and businesses in Singapore and have built solid relationships with major banks.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row banner">
+      <div class="container">
+        <h1 class="banner-title-black">Our Team</h1>
+        <div class="row">
+          <div class="col-md-3 principle-cards">
+            <img src="./images/ceo.png" class="profile-picture"/>
+            Harry Tan, <span class="role">Founder & CEO</span>
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/HR.png" class="profile-picture"/>
+            Pamela Geoffrey, <span class="role">Talent Acquisition & COO</span>
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/IT.png" class="profile-picture"/>
+            Denniel Jay Sermount, <span class="role">CTO</span>
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/creative.png" class="profile-picture"/>
+            Jordan Smith, <span class="role">Creative Lead</span>
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/consultant-1.png" class="profile-picture"/>
+            Shazana, <span class="role">Mortgage Consultant (Commercial)</span>
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/consultant-2.png" class="profile-picture"/>
+            Delia Sng, <span class="role">Mortgage Consultant (Commercial)</span>
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/consultant-3.png" class="profile-picture"/>
+            William Lim, <span class="role">Mortgage Consultant (Personal)</span>
+          </div>
+          <div class="col-md-3 principle-cards">
+            <img src="./images/consultant-4.png" class="profile-picture"/>
+            Sarah Sim, <span class="role">Mortgage Consultant (Personal)</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row banner" id="footer">
       <div class="container">
         <div class="row">
@@ -111,6 +174,7 @@
               </li>
               <li>
                 <a href="loan.html">Loan Calculator</a>
+
               </li>
               <li>
                 Return on Investment
