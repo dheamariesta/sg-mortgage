@@ -63,9 +63,9 @@
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #eee;
+  border: medium solid #fff;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #eee;
+  border-color: transparent transparent transparent #fff;
 }
 
 /* Add arrows to the right my-container (pointing left) */
@@ -77,9 +77,9 @@
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #eee;
+  border: medium solid #fff;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #eee transparent transparent;
+  border-color: transparent #fff transparent transparent;
 }
 
 /* Fix the circle for my-containers on the right side */
@@ -90,7 +90,7 @@
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: #eee;
+  background-color: #fff;
   position: relative;
   border-radius: 6px;
   /* border: 1px solid black; */

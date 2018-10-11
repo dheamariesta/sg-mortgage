@@ -5,10 +5,56 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+.active{
+  color: #c80000;
+}
+
 h1{
   font-family: 'Lato';
   font-weight: 300;
 }
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 300 16px/1.7 'Open Sans', sans-serif;
+     color: #666;
+     cursor: pointer;
+}
+
 .logo{
   height: 50px;
   margin-top: 10px;
@@ -22,11 +68,18 @@ h1{
 #nav li{
   display: inline-block;
 }
+#menu{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#menu li a:hover{
+  color:#c80000;
+}
 ul{
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.banner:nth-child(odd){
+.banner:nth-child(even){
   background-color: #eeeeee;
 }
 #banner-one{
@@ -61,15 +114,24 @@ ul{
 #bank-partners, .success-story{
   display: flex;
   align-items: center;
+  justify-content:center;
 }
 
-
+#not-sure{
+  height: 600px;
+  background-image: url('../images/call.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
 .bank-logo{
   max-width: 100%;
   /* height: 100px; */
-  min-height:60px;
-  max-height: 80px;
-  margin: 10px;
+  min-height:40px;
+  max-height: 50px;
+  margin: 0px 30px;
 }
 #side-image{
   background: url("../images/laptop-girl.jpg") 50% 50% no-repeat;
@@ -77,6 +139,12 @@ ul{
   width: 400px;
   height: 400px;
 
+}
+#side-career-image{
+  background: url('../images/career.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  /* width: 500px; */
+  height: 400px;
 }
 .banner-title-white{
   color: white;
@@ -91,14 +159,14 @@ ul{
 .profile-picture{
   width: 200px;
   height: 200px;
-  border: 5px solid white;
+  border: 5px solid #eee;
   border-radius: 50%;
   display: block;
   margin: 10px auto;
 }
 .about-title-white{
   color: white;
-  z-index: 100;
+  z-index: 1;
   text-align: center;
   width: 100%;
 }
@@ -190,22 +258,67 @@ a:hover{
   background-repeat: none;
   background-image: none;
 }
-
-#loan-background{
-  background-image: url('../images/flatlay.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.loan-container{
   padding: 30px;
 }
 #loan-form{
-  width: 50%;
-  background-color: rgba(0,0,0,0.3);
+  /* width: 50%; */
+  /* background-color: rgba(0,0,0,0.3); */
   border-radius: 20px;
   padding: 20px;
-  color: white;
+  /* color: white; */
   /* margin: 15px; */
 }
+#summary{
+  /* position: fixed;
+  width: 400px;
+  top: 20vh; */
+  /* right: 5vh; */
+  padding: 50px;
+  background-color: #eee;
+}
+#pie{
+  margin: auto auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 300px;
+  background-color: rgb(255, 123, 101);
+}
+#pie-inner{
+  position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px, 300px, 300px, 100px); transform: rotate(0deg);
+}
+#pie-inner div{
+background-color: rgb(255, 159, 145); position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px, 150px, 300px, 0px); transform: rotate(180deg);
+}
+#pie-inner-2{
+  position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px, 300px, 300px, 150px); transform: rotate(180deg);
+}
+#pie-inner-2 div{
+  background-color: rgb(255, 159, 145); position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px, 150px, 300px, 0px); transform: rotate(180deg);
+}
+#loan-block, #free-block{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+#loan-block{
+  background-color: #c80000;
+}
+#free-block{
+  background-color: #F2A395;
+}
+.chart-description{
+  display: flex;
+  align-items: center;
+}
+.monthly-amount{
+  color:red;
+  font-size: 40px;
+
+  /* font-weight: 600; */
+}
+
 .header-row{
   width: 100%;
   border-bottom: 1px solid #ccc;
@@ -216,28 +329,36 @@ a:hover{
   left: 0;
   top: 0;
 }
-.banner-title{
-  font-weight: 600;
-}
+
 .form-section-title{
   /* font-weight: 600; */
   font-size: 18px;
-  color: rgb(212, 212, 212);
+  /* color: rgb(212, 212, 212); */
 }
 .form-row{
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.input-group.mb-3{
-  /* width:50%; */
-}
+
 .input-group-text{
-  background-color: rgba(0,0,0,0.3);
-  color: white;
+  background-color: rgba(0,0,0,0);
+  color: #aaa;
+  border: none;
+}
+input.form-control{
+  border: 0px;
+  border-bottom: solid 1px #ccc;
+}
+input.form-control:focus{
+  border: 0px;
+  border-bottom: solid 1px #c80000;
+  box-shadow: none;
 }
 .steps{
   text-align: right;
+  color: red;
+  font-weight: 600;
 }
 #submit-calculator{
   margin: 15px auto;
@@ -245,18 +366,35 @@ a:hover{
 #map{
   width: 100%;
   height: 500px;
+  /* margin-top: 70px; */
 }
-#contact-form{
+
+
+
+.contact-form{
   margin: 20px auto;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   padding: 20px;
 }
-#contact-form input, #contact-form textarea{
-  background-color: #eee;
+.contact-form input, .contact-form textarea{
+  border: 0px;
+  border-bottom: 1px solid #ccc;
   font-size: 14px;
+  border-radius: 0;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+  color: #ddd;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+  box-shadow: none;
+  border-bottom: 1px solid #c80000;
+}
+.contact-form input:active, .contact-form textarea:active{
+  border: 0px;
+  border-bottom: 1px solid #c80000;
 }
 .contact-us{
-  margin: 20px auto;
+  margin: 40px auto;
   font-family: 'Lato';
   text-align: center;
   font-weight: 300;
@@ -264,13 +402,15 @@ a:hover{
 #submit-contact{
   width: 100%;
 }
-.list-group{
+/* .list-group{
   width: 100%;
-}
+} */
 .highlight{
   color: red;
 }
-
+.faq-list{
+  padding: 30px;
+}
 #about-banner{
   background-image: url('../images/about.jpg');
   background-position: center;
@@ -325,7 +465,11 @@ a:hover{
       background-attachment: scroll;
 
     }
-
+    #not-sure{
+      height: 400px;
+      align-items: flex-start;
+      background-position: center top;
+    }
     #side-image{
       background: url("../images/laptop-girl.jpg") 50% 50% no-repeat;
       background-size: cover;
@@ -355,7 +499,9 @@ a:hover{
     .bank-logo{
       display: block;
       margin: 20px auto;
-      max-height: 50px;
+      max-width: 150px;
+      min-height:30px;
+      max-height: 40px;
     }
     .profile-picture{
       display: block;
@@ -363,10 +509,10 @@ a:hover{
     }
     #loan-form{
       width: 100%;
-      background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
       border-radius: 20px;
       padding: 20px;
-      color: white;
+      /* color: white; */
       /* margin: 15px; */
     }
     #about-banner{
@@ -374,6 +520,27 @@ a:hover{
     }
     #about-banner:after{
       height: 350px;
+    }
+    #pie, #pie-inner, #pie-inner div, #pie-inner-2, #pie-inner-2 div{
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+    }
+    #pie-inner{
+      clip: rect(0px, 150px, 150px, 50px);
+    }
+    #pie-inner div{
+    clip: rect(0px, 50px, 150px, 0px);
+    }
+    #pie-inner-2{
+     clip: rect(0px, 150px, 150px, 50px);
+    }
+    #pie-inner-2 div{
+      clip: rect(0px, 150px, 150px, 0px);
+    }
+    #loan-block, #free-block{
+      width: 10px;
+      height: 10px;
     }
 
 
