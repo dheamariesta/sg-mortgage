@@ -19,323 +19,326 @@
 
   </head>
   <body>
-    <div class="header-row">
-      <div class="container">
+    <div class="container-fluid">
+      <div class="header-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <a href="index.html"><img src="./images/SGMortgage-logo.png" class="logo" /></a>
+            </div>
+
+            <div class="col-6" id="nav">
+              <label for="show-menu" class="show-menu"><i class="fas fa-bars fa-2x"></i></label>
+              <input type="checkbox" id="show-menu" role="button">
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li><a href="loan.html" class="active">Loan Calculator</a></li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container loan-container">
         <div class="row">
-          <div class="col-6">
-            <a href="index.html"><img src="./images/SGMortgage-logo.png" class="logo" /></a>
-          </div>
+          <div class="col-md-6">
+            <h2 class="banner-title-black">Loan Calculator</h2>
+            <p>
+              This calculator estimates the maximum loan affordability. You will need key information such as age, income, debt and
+              liquid assets for an accurate assessment.
+            </p>
+            <div id="loan-form">
 
-          <div class="col-6" id="nav">
-            <label for="show-menu" class="show-menu"><i class="fas fa-bars fa-2x"></i></label>
-            <input type="checkbox" id="show-menu" role="button">
-            <ul id="menu">
-              <li><a href="index.html">Home</a></li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li><a href="loan.html" class="active">Loan Calculator</a></li>
-              <li><a href="#">Blog</a></li>
-              <li>
-                <a href="contact.html">Contact Us</a>
-              </li>
-            </ul>
+              <div class="row form-row">
+                <div class="col-md-2">
+                  <h3 class="steps">Step 1</h3>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-9">
+                  <span class="form-section-title">Are you buying a property...</span><br />
+                  <input type="radio" name="demo" value="one" id="radio-one" class="form-radio"><label for="radio-one">Alone</label>
+                  <input type="radio" name="demo" value="two" id="radio-two" class="form-radio"><label for="radio-two">With Partner</label>
+
+
+                </div>
+              </div>
+              <div class="row form-row">
+                <div class="col-md-2">
+                  <h3 class="steps">Step 2</h3>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-9">
+                  <span class="form-section-title">Personal details</span><br />
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Age</span>
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Salary ($)</span>
+                    </div>
+                    <input type="text" class="form-control">
+                    <div class="input-group-append">
+                      <span class="input-group-text">.00</span>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Employment Type</span>
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+
+                </div>
+              </div>
+              <div class="row form-row">
+                <div class="col-md-2">
+                  <h3 class="steps">Step 3</h3>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-9">
+                  <span class="form-section-title">Type of property</span><br />
+                  <div class="input-group mb-3">
+
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option value="1" selected>HDB</option>
+                      <option value="2">Condominium</option>
+                      <option value="3">Landed property</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row form-row">
+                <div class="col-md-2">
+                  <h3 class="steps">Step 4</h3>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-9">
+                  <span class="form-section-title">About property</span><br />
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Price ($)</span>
+                    </div>
+                    <input type="text" class="form-control" >
+                    <div class="input-group-append">
+                      <span class="input-group-text">.00</span>
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Intend to borrow (%)</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+                  <br />
+                </div>
+              </div>
+              <div class="row form-row">
+                <div class="col-md-2">
+                  <h3 class="steps">Step 5</h3>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-9">
+                  <span class="form-section-title">Other Financial Commitments</span><br />
+                  E.g.: personal loan/s, home loan/s, credit card/s, and any credit facilities
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                    </div>
+                    <input type="text" class="form-control" >
+                    <div class="input-group-append">
+                      <span class="input-group-text">.00</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-danger" id="submit-calculator">Get Quotation</button>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div id="summary">
+              <div id="pie">
+                <div id="pie-inner" style="">
+                  <div style="">
+
+                  </div>
+                </div>
+                <div id="pie-inner-2" style="">
+                  <div style="">
+                  </div>
+                </div>
+              </div>
+              <h1 class="banner-title-black">Summary</h1>
+              <div class="row">
+                <div class="col-2">
+                  <div id="loan-block">
+                  </div>
+                </div>
+                <div class="col-10 chart-description">
+                  Loan Amount (0%)
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <div id="free-block">
+
+                  </div>
+                </div>
+                <div class="col-10 chart-description">
+                  Others (100%)
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12" style="margin-top: 20px; font-size: 20px;">
+                  Monthly Installment
+                </div>
+                <div class="col-md-12">
+                  <h1 class="monthly-amount">$ 00.00</h1>
+                  <p style="font-size: 12px; font-style: italic; font-weight: 300;">
+                    Based on the lowest rate available in the market
+                  </p>
+                  <button type="button" class="btn btn-outline-danger" id="submit-calculator">View Comparison</button>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container loan-container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="banner-title-black">Loan Calculator</h2>
-          <p>
-            This calculator estimates the maximum loan affordability. You will need key information such as age, income, debt and
-            liquid assets for an accurate assessment.
-          </p>
-          <div id="loan-form">
-
-            <div class="row form-row">
-              <div class="col-md-2">
-                <h3 class="steps">Step 1</h3>
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-9">
-                <span class="form-section-title">Are you buying a property...</span><br />
-                <input type="radio" name="demo" value="one" id="radio-one" class="form-radio"><label for="radio-one">Alone</label>
-                <input type="radio" name="demo" value="two" id="radio-two" class="form-radio"><label for="radio-two">With Partner</label>
-
-
-              </div>
-            </div>
-            <div class="row form-row">
-              <div class="col-md-2">
-                <h3 class="steps">Step 2</h3>
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-9">
-                <span class="form-section-title">Personal details</span><br />
-
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Age</span>
-                  </div>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Salary ($)</span>
-                  </div>
-                  <input type="text" class="form-control">
-                  <div class="input-group-append">
-                    <span class="input-group-text">.00</span>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Employment Type</span>
-                  </div>
-                  <input type="text" class="form-control">
-                </div>
-
-              </div>
-            </div>
-            <div class="row form-row">
-              <div class="col-md-2">
-                <h3 class="steps">Step 3</h3>
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-9">
-                <span class="form-section-title">Type of property</span><br />
-                <div class="input-group mb-3">
-
-                  <select class="custom-select" id="inputGroupSelect01">
-                    <option value="1" selected>HDB</option>
-                    <option value="2">Condominium</option>
-                    <option value="3">Landed property</option>
-                  </select>
-                </div>
-
-              </div>
-            </div>
-            <div class="row form-row">
-              <div class="col-md-2">
-                <h3 class="steps">Step 4</h3>
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-9">
-                <span class="form-section-title">About property</span><br />
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Price ($)</span>
-                  </div>
-                  <input type="text" class="form-control" >
-                  <div class="input-group-append">
-                    <span class="input-group-text">.00</span>
-                  </div>
-                </div>
-
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Intend to borrow (%)</span>
-                  </div>
-                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                </div>
-                <br />
-              </div>
-            </div>
-            <div class="row form-row">
-              <div class="col-md-2">
-                <h3 class="steps">Step 5</h3>
-              </div>
-              <div class="col-md-1">
-
-              </div>
-              <div class="col-md-9">
-                <span class="form-section-title">Other Financial Commitments</span><br />
-                E.g.: personal loan/s, home loan/s, credit card/s, and any credit facilities
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
-                  </div>
-                  <input type="text" class="form-control" >
-                  <div class="input-group-append">
-                    <span class="input-group-text">.00</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <button type="button" class="btn btn-outline-danger" id="submit-calculator">Get Quotation</button>
-          </div>
-
-        </div>
-        <div class="col-md-6">
-          <div id="summary">
-            <div id="pie">
-              <div id="pie-inner" style="">
-                <div style="">
-
-                </div>
-              </div>
-              <div id="pie-inner-2" style="">
-                <div style="">
-                </div>
-              </div>
-            </div>
-            <h1 class="banner-title-black">Summary</h1>
-            <div class="row">
-              <div class="col-2">
-                <div id="loan-block">
-                </div>
-              </div>
-              <div class="col-10 chart-description">
-                Loan Amount (0%)
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-2">
-                <div id="free-block">
-
-                </div>
-              </div>
-              <div class="col-10 chart-description">
-                Others (100%)
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-md-12" style="margin-top: 20px; font-size: 20px;">
-                Monthly Installment
-              </div>
-              <div class="col-md-12">
-                <h1 class="monthly-amount">$ 00.00</h1>
-                <p style="font-size: 12px; font-style: italic; font-weight: 300;">
-                  Based on the lowest rate available in the market
-                </p>
-                <button type="button" class="btn btn-outline-danger" id="submit-calculator">View Comparison</button>
-              </div>
-
-            </div>
 
 
 
-          </div>
 
-
-        </div>
       </div>
 
 
 
-
-    </div>
-
-
-
-    <div class="row banner" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <img src="./images/SGMortgage-logo-bnw.png" class="logo"/>
-          </div>
-          <div class="col-md-3">
-            <ul>
-              <li class="footer-header">
-                Company
-              </li>
-              <li>
-                Our Team
-              </li>
-              <li>
-                Blog
-              </li>
-              <li>
-                Press
-              </li>
-              <li>
-                Careers
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul>
-              <li class="footer-header">
-                Property Loan
-              </li>
-              <li>
-                <a href="loan.html">Loan Calculator</a>
-              </li>
-              <li>
-                Return on Investment
-              </li>
-              <li>
-                Eligibility
-              </li>
-              <li>
-                Book Consultation
-              </li>
-              <li>
-                Home Loan
-              </li>
-              <li>
-                Commercial Property Loan
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul>
-              <li class="footer-header">
-                Find Us
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-1">
-                    <i class="fas fa-map-marker-alt"></i>
+      <div class="row banner" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="./images/SGMortgage-logo-bnw.png" class="logo"/>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="footer-header">
+                  Company
+                </li>
+                <li>
+                  Our Team
+                </li>
+                <li>
+                  Blog
+                </li>
+                <li>
+                  Press
+                </li>
+                <li>
+                  Careers
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="footer-header">
+                  Property Loan
+                </li>
+                <li>
+                  <a href="loan.html">Loan Calculator</a>
+                </li>
+                <li>
+                  Return on Investment
+                </li>
+                <li>
+                  Eligibility
+                </li>
+                <li>
+                  Book Consultation
+                </li>
+                <li>
+                  Home Loan
+                </li>
+                <li>
+                  Commercial Property Loan
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li class="footer-header">
+                  Find Us
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-1">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="col-10">
+                      School of Electrical and Electronic Engineering<br />50 Nanyang Ave<br />Singapore 639798
+                    </div>
                   </div>
-                  <div class="col-10">
-                    School of Electrical and Electronic Engineering<br />50 Nanyang Ave<br />Singapore 639798
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-1">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="col-10">
+                      (65)1234 5678
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-1">
-                    <i class="fas fa-phone"></i>
-                  </div>
-                  <div class="col-10">
-                    (65)1234 5678
-                  </div>
-                </div>
 
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-1">
-                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-1">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="col-10">
+                      support@sgmortgage.com
+                    </div>
                   </div>
-                  <div class="col-10">
-                    support@sgmortgage.com
-                  </div>
-                </div>
 
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
+
       </div>
-
-
     </div>
+
 
   </body>
 </html>

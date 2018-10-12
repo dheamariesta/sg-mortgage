@@ -365,8 +365,9 @@ input.form-control:focus{
   margin: 15px auto;
 }
 #map{
-  width: 100%;
+  width: 100vw;
   height: 500px;
+  margin-left: -15px;
   /* margin-top: 70px; */
 }
 
@@ -418,6 +419,7 @@ input.form-control:focus{
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+  width: 100vw;
   display: flex;
   align-items: center;
 }
@@ -545,6 +547,9 @@ input.form-control:focus{
     #loan-block, #free-block{
       width: 10px;
       height: 10px;
+    }
+    #side-career-image{
+      height: 200px;
     }
 
 
